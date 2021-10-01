@@ -1,0 +1,85 @@
+#header {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    min-width: 10rem;
+    min-height: 4rem;
+}
+
+#header > h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 5px solid #000;
+}
+
+body {
+    background: rgb(236, 236, 236);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+}
+
+.inputbox{
+    text-align: center;
+    font-size: 15;
+}
+
+.inputbox > input{
+    display: grid;
+    margin-left: 30px;
+    min-width: 500px;
+    min-height: 50px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 3px solid #000;
+    border-radius: 4px 4px 0 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+.inputbox > label {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+#save {
+    display:block;
+    margin: auto;
+    margin-bottom: 50px;
+    min-width: 20rem;
+    min-height: 3rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    background: #1766CF;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    border:1px solid #fff;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+#save:hover{
+    background: rgb(18, 83, 167);
+}
+
+.main-container {
+    margin-top: 100px;
+    border-bottom: 3px solid #000;
+}
+
+.card {
+    margin: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 230px;
+    min-height: 350px;
+}

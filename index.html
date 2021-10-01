@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon-96x96.png"/>
+    <title>Busca Cep</title>
+</head>
+<body>
+    <header id ="header">
+        <h1>pesquisa de cep</h1>
+    </header>
+
+    <main class ="container">
+        <div class="main-container">
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id ="cep" required>
+                    <label for="cep">CEP</label>
+                </div>
+        
+                <div class="inputbox">
+                    <input type="text" id ="endereço" required>
+                    <label for="endereço">Endereço</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id ="numero" required>
+                    <label for="numero">Número</label>
+                </div>
+        
+                <div class="inputbox">
+                    <input type="text" id ="bairro" required>
+                    <label for="bairro">Bairro</label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="inputbox">
+                    <input type="text" id ="cidade" required>
+                    <label for="cidade">Cidade</label>
+                </div>
+        
+                <div class="inputbox">
+                    <input type="text" id ="estado" required>
+                    <label for="estado">Estado</label>
+                </div>
+            </div>
+
+            <div id="button">
+                <button id = "save" type="button">Salvar</button>
+            </div>
+        </div>
+
+        <div class="card">
+
+        </div>
+    </main>
+</body>
+</html>
+
+<!-- TODO:
+[X] Fazer um site em HTML
+[] Estruturar o CSS
+[] Testar a responsividade do site mobile first (@media screen)
+[] Conseguir a API de BUSCA de CEP
+[] Construir o JS
+[] Armazenar os dados no localStorage 
+[] Guardar as informações de pesquisa dentro de um card, que pode ser impreso JS: print
+-->
