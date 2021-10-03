@@ -1,8 +1,12 @@
+body {
+    background: rgb(236, 236, 236);
+}
+
 #header {
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     min-width: 10rem;
-    min-height: 4rem;
+    min-height: max-content;
 }
 
 #header > h1 {
@@ -16,20 +20,21 @@
     border-bottom: 5px solid #000;
 }
 
-body {
-    background: rgb(236, 236, 236);
+.main-container {
+    margin-top: 100px;
+    border-bottom: 3px solid #000;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 50px;
+    margin: 40px;
 }
 
 .inputbox{
     text-align: center;
-    font-size: 15;
+    font-size: 15px;
 }
 
 .inputbox > input{
@@ -43,6 +48,7 @@ body {
     border-radius: 4px 4px 0 0;
     outline: 0;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 .inputbox > label {
@@ -71,10 +77,6 @@ body {
     background: rgb(18, 83, 167);
 }
 
-.main-container {
-    margin-top: 100px;
-    border-bottom: 3px solid #000;
-}
 
 .card {
     margin: 20px;
@@ -83,3 +85,60 @@ body {
     width: 230px;
     min-height: 350px;
 }
+
+.incorrect {
+    color:red;
+}
+
+@media all and (max-width: 560px) {
+    body{
+        max-width: 560px;
+        max-height: auto;
+    }
+
+    #header {
+        max-height: auto;
+    }
+
+    #header > h1{
+        font-size: 30px;
+    }
+
+    .main-container {
+        margin-top: 10px;
+    }
+    
+    .inputbox > input{
+        margin-left: 40px;
+        min-width: 40px;
+        min-height: 20px;
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    
+    .inputbox > label {
+        font-family: 'Dosis', sans-serif;
+        font-size: 13px;
+    }
+
+    #save {
+        margin-bottom: 50px;
+        min-width: 200px;
+        min-height: 35px;
+        font-size: 15px;
+        border-radius: 6px;
+        margin-bottom: 25px;
+    }
+
+    .card {
+        margin: 20px;
+        margin-left: 50px;
+        max-width: 150px;
+        min-height: 200px;
+    }
+}
+
+/* Quando se aplica o "all" significa que as config serão aplicadas para todos os tipos de screen */
+/* @media (orietantion: landscape) => aplcia os paramentros conforme o width */
+/* @media (orietantion: landscape) => aplcia os paramentros conforme o width */
+/* display: none; and visibility: hidden; => faz o elemento ficar 
