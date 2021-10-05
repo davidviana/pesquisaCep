@@ -23,6 +23,7 @@ body {
 .main-container {
     margin-top: 100px;
     border-bottom: 3px solid #000;
+    overflow: hidden;
 }
 
 .row {
@@ -34,12 +35,13 @@ body {
 
 .inputbox{
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .inputbox > input{
     display: grid;
     margin-left: 30px;
+    margin-bottom: 10px;
     min-width: 500px;
     min-height: 50px;
     box-shadow: 0 0 0 0;
@@ -78,19 +80,16 @@ body {
 }
 
 
-.card {
+#card {
     margin: 20px;
     border: 1px solid #000;
     border-radius: 3px;
-    width: 230px;
-    min-height: 350px;
+    width: max-content;
+    min-height: max-content;
+    padding: 10px;
 }
 
-.incorrect {
-    color:red;
-}
-
-@media all and (max-width: 560px) {
+@media screen and (max-width: 600px) {
     body{
         max-width: 560px;
         max-height: auto;
@@ -105,11 +104,11 @@ body {
     }
 
     .main-container {
-        margin-top: 10px;
+        margin-top: -20px;
+        overflow: hidden;
     }
     
     .inputbox > input{
-        margin-left: 40px;
         min-width: 40px;
         min-height: 20px;
         font-size: 10px;
@@ -118,7 +117,7 @@ body {
     
     .inputbox > label {
         font-family: 'Dosis', sans-serif;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     #save {
@@ -130,15 +129,13 @@ body {
         margin-bottom: 25px;
     }
 
-    .card {
-        margin: 20px;
-        margin-left: 50px;
-        max-width: 150px;
-        min-height: 200px;
+    #card {
+        margin-left: 20px;
+        min-height: auto;
     }
 }
 
 /* Quando se aplica o "all" significa que as config serão aplicadas para todos os tipos de screen */
 /* @media (orietantion: landscape) => aplcia os paramentros conforme o width */
 /* @media (orietantion: landscape) => aplcia os paramentros conforme o width */
-/* display: none; and visibility: hidden; => faz o elemento ficar 
+/* display: none; and visibility: hidden; => faz o elemento ficar invisivel

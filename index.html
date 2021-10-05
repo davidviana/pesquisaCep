@@ -20,7 +20,7 @@
         <div class="main-container">
             <div class="row">
                 <div class="inputbox">
-                    <input type="text" id ="cep" required>
+                    <input type="text" id ="cep" data-ls-module="charCounter" maxlength="9" placeholder= "Digite seu CEP" required>
                     <label for="cep">CEP</label>
                 </div>
         
@@ -59,8 +59,13 @@
             </div>
         </div>
 
-        <div class="card">
-            
+        <div id="card">
+            <div>CEP:</div>
+            <div>Endereço: </div>
+            <div>Número: </div>
+            <div>Bairro: </div>
+            <div>Cidade: </div>
+            <div>Estado: </div>
         </div>
     </main>
 </body>
@@ -71,7 +76,7 @@
 [X] Estruturar o CSS
 [X] Conseguir a API de BUSCA de CEP
 [X] Construir o JS
-[] Testar a responsividade do site method: mobile first (@media screen)
-[] Armazenar os dados no localStorage 
+[X] Testar a responsividade do site method: mobile first (@media screen)
+[X] Armazenar os dados no localStorage 
 [] Guardar as informações de pesquisa dentro de um card
 -->
