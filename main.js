@@ -7,19 +7,6 @@ const card = document.getElementById('save').addEventListener('click', (criar)=>
     
 })
 
-let cepList = [];
-
-const traco = document.getElementById("cep")
-
-function storage() {
-    var catched = localStorage.getItem("cepList")
-    if(catched != null && catched != "") {
-        cepList = catched.split(",")
-    }
-}
-
-storage()
-
 const limparForm = () => {
     document.getElementById('endereco').value = "";
     document.getElementById('bairro').value = "";
@@ -29,16 +16,13 @@ const limparForm = () => {
 
 const preencherForm = (endereco) => {
     let ender = document.getElementById('endereco').value = endereco.logradouro;
-    let bairro = document.getElementById('bairro'). value = endereco.bairro;
-    let cidade = document.getElementById('cidade'). value = endereco.localidade;
-    let estado = document.getElementById('estado'). value = endereco.uf;
+    let bairro = document.getElementById('bairro').value = endereco.bairro;
+    let cidade = document.getElementById('cidade').value = endereco.localidade;
+    let estado = document.getElementById('estado').value = endereco.uf;
 
-    console.log(ender)
-    console.log(bairro)
-    console.log(cidade)
-    console.log(estado)
+    let list = [ender, bairro, cidade, estado];
+    localStorage.setItem(endereco.cep, list);
 }
-
 
 
 const eNumero = (numero) => /^[0-9]+$/.test(numero);
@@ -52,8 +36,7 @@ const pesquisarCep = async () => {
         const dados = await fetch(url);
         const endereco = await dados.json();
 
-        cepList.push(endereco.cep);
-        localStorage.setItem("cepList", cepList);
+        localStorage.getItem("enderenco", endereco);
 
         if (endereco.hasOwnProperty('erro')) {
             document.getElementById('endereco').value = "CEP não encontrado";
@@ -68,6 +51,9 @@ const pesquisarCep = async () => {
 document.getElementById('cep')
         .addEventListener('keypress', pesquisarCep);
 
+function Card() {
+    
+}
 //TIPS//
 //USE STRICT: usa para ver detalhadamente o erro//
 // template string ``//
