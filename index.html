@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/global.css">
     <script src="main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/favicon-96x96.png"/>
     <title>Busca Cep</title>
 </head>
@@ -30,12 +31,7 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="inputbox">
-                    <input type="text" id ="numero" required>
-                    <label for="numero">Número</label>
-                </div>
-        
+            <div class="row">        
                 <div class="inputbox">
                     <input type="text" id ="bairro" required>
                     <label for="bairro">Bairro</label>
@@ -58,14 +54,9 @@
                 <button id = "save" type="button">Salvar</button>
             </div>
         </div>
-
-        <div id="card">
-            <div>CEP:</div>
-            <div>Endereço: </div>
-            <div>Número: </div>
-            <div>Bairro: </div>
-            <div>Cidade: </div>
-            <div>Estado: </div>
+        
+        <div id="cards">
+            
         </div>
     </main>
 </body>
@@ -78,5 +69,7 @@
 [X] Construir o JS
 [X] Testar a responsividade do site method: mobile first (@media screen)
 [X] Armazenar os dados no localStorage 
-[] Guardar as informações de pesquisa dentro de um card 
+[X] Guardar as informações de pesquisa dentro de um card
+[X] Dividir os elementos digitados no CEP com "-"
+[X] Criar um botão para remover os cards
 -->

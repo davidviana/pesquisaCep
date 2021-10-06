@@ -75,6 +75,10 @@ body {
     transition: background 0.2s ease-in-out;
 }
 
+#bairro {
+    width: 1045px;
+}
+
 #save:hover{
     background: rgb(18, 83, 167);
 }
@@ -89,7 +93,26 @@ body {
     padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
+#cards {
+    display: flex;
+    flex-direction: row;
+}
+
+#delete-button {
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    transition: hover 0.2s ease-in-out;
+    opacity: 0;
+}
+
+#delete-button:hover{
+    color: #fff;
+    background:red;
+    opacity: 1;
+}
+
+@media screen and (max-width: 560px) {
     body{
         max-width: 560px;
         max-height: auto;
@@ -132,6 +155,15 @@ body {
     #card {
         margin-left: 20px;
         min-height: auto;
+        min-width: 300px;
+    }
+
+    #bairro {
+        width: 250px;
+    }
+
+    #cards {
+        flex-direction: column;
     }
 }
 
